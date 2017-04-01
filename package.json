@@ -1,0 +1,24 @@
+{
+  "name": "dixby-node-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dixby.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jose363/dixby-node-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jose363/dixby-node-app/issues"
+  },
+  "homepage": "https://github.com/jose363/dixby-node-app#readme",
+  "dependencies": {
+    "spotify": "^0.3.0",
+    "twitter": "^1.7.0"
+  }
+}
