@@ -9,6 +9,10 @@ var song = [];
 switch (search) {
   case "spotify-this-song":
     song = process.argv[3];
+    if (song === undefined) {
+        song = "The Sign";
+        searchSpotify(song);
+    }
     searchSpotify(song);
     break;
   case "my-tweets":
@@ -27,11 +31,14 @@ function searchSpotify(song){
         return;
     }
 
-    console.log(JSON.stringify(data, null, 2));
     var artist = data.tracks.items[0].album.artists[0].name;
     console.log(artist);
     var songName = data.tracks.items[0].name;
     console.log(songName);
+    var songLink = data.tracks.items[0].external_urls.spotify;
+    console.log(songLink);
+    var album = data.tracks.items[0].album.name;
+    console.log(album);
 });
 }
 
